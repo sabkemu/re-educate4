@@ -3,7 +3,11 @@
     transition: left .5s ease-in;
 }
 .anim:active .ball-two{
-    margin-left: 0;
+    margin-left: auto;
+    animation-name: ball-two;
+    animation-duration: 5s;
+    transition: left .5s ease-in;
+    animation-delay: 0.35s;
 }
 .ball-one {
     background: #ff97C0;
@@ -22,4 +26,7 @@
     left: 300px;
     width: 100px; 
     height: 100px;
+}
+@keyframes ball-two{
+    100%{left:800px;}
 }
